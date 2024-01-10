@@ -12,7 +12,7 @@ echo "Generating OpenAPI client using host: ${HOST_NAME}"
 ${OPENAPI_GENERATOR:-openapi-generator-cli} generate -g dart-dio -p browserClient=false -p nullableFields=true \
   -p serializationLibrary=json_serializable -p pubName=djangoflow_openapi \
   -p pubLibrary=djangoflow_openapi \
-  -i "${HOST_NAME}/swagger/?format=openapi" -o "${TARGET_DIR}" \
+  -i "${HOST_NAME}" -o "${TARGET_DIR}" \
   && cd "${TARGET_DIR}" \
   && grep -rl 'includeIfNull: truefalse' lib  | xargs sed -i '' 's/includeIfNull: truefalse/includeIfNull: true/g' \
   && dart pub get \
