@@ -10,7 +10,9 @@ dependencies:
   app_links: ^6.3.2
   bloc_test: ^10.0.0
   djangoflow_deep_link_interface:
-    path: ../djangoflow_deep_link_interface
+    git:
+      url: https://github.com/shatanikmahanty/flutter-djangoflow.git
+      path: packages/djangoflow_deep_link/djangoflow_deep_link_interface
   flutter_bloc: ^9.1.1
   mockito: ^5.4.4
 
