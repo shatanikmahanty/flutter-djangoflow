@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
   djangoflow_app:
     path: ../
-  flutter_bloc: ^8.1.3
+  flutter_bloc: ^9.1.1
 
 dev_dependencies:
   flutter_test:
